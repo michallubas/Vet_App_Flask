@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="jumbotron">
+
+    <p1> List of all files  </p1>
+
+            {% for file in list_files %}
+            <p> {{file}} </p>
+            {% endfor %}
+
+    </div>
+
+{% endblock %}

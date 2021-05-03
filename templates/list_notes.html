@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="jumbotron">
+
+    <p1> List of all notes  </p1>
+
+            {% for note in list_notes %}
+            <p> {{note}} </p>
+            {% endfor %}
+
+    </div>
+
+{% endblock %}

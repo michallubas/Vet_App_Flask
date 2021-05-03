@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="jumbotron">
+
+    <p1> List of all users  </p1>
+
+            {% for user in list_users %}
+            <p> {{user}} </p>
+            {% endfor %}
+
+
+
+    </div>
+
+{% endblock %}
